@@ -89,11 +89,103 @@ https://gokuxedition.github.io/kaixgen-guardian-policy/
 
 ## 🚀 Deployment Options
 
-- VPS (Recommended)
-- Railway
-- Heroku
-- Termux
-- Docker (Upcoming)
+---
+
+# 🚀 Deployment Options
+
+## 1️⃣ 🖥 VPS (Recommended)
+
+Production-grade deployment with full control.
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+pip install -r requirements.txt
+python main.py
+```
+
+Best For:
+- Large Communities
+- 24/7 Uptime
+- Maximum Performance
+
+---
+
+## 2️⃣ 🚄 Deploy on Railway
+
+<p align="left">
+  <a href="https://railway.app/new">
+    <img src="https://img.shields.io/badge/Deploy_on-Railway-6B46C1?style=for-the-badge&logo=railway&logoColor=white">
+  </a>
+</p>
+
+Steps:
+1. Connect GitHub Repository
+2. Add Environment Variables
+3. Click Deploy
+
+---
+
+## 3️⃣ 🔥 Deploy on Heroku
+
+<p align="left">
+  <a href="https://heroku.com/deploy">
+    <img src="https://img.shields.io/badge/Deploy_on-Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white">
+  </a>
+</p>
+
+Requirements:
+- Procfile
+- requirements.txt
+- Environment Variables
+
+---
+
+## 4️⃣ 📱 Deploy on Termux (Android)
+
+```bash
+pkg update && pkg upgrade
+pkg install python git
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+pip install -r requirements.txt
+python main.py
+```
+
+Best For:
+- Testing
+- Development Mode
+
+---
+
+## 5️⃣ 🐳 Deploy with Docker
+
+<p align="left">
+  <a href="#">
+    <img src="https://img.shields.io/badge/Deploy_with-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+  </a>
+</p>
+
+Build & Run:
+
+```bash
+docker build -t kaixgen-guardian .
+docker run -d kaixgen-guardian
+```
+
+---
+
+# ⚙ Required Environment Variables
+
+```
+BOT_TOKEN=your_bot_token_here
+ADMIN_ID=your_telegram_id
+DATABASE_URL=your_database_url
+```
+
+---
+
+> ⚡ Production Tip: Use MongoDB or PostgreSQL for persistent moderation tracking.
 
 ---
 
